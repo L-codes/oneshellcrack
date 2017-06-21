@@ -162,7 +162,7 @@ def commandline():
 [ Github ] {}
 '''.format(__author__, __version__, __github__)
     print(banner)
-    default_shell_request_num = {'php': 1500, 'asp': 1000, 'aspx': 1000, 'jsp': 4000}
+    default_shell_request_num = {'php': 1000, 'asp': 1000, 'aspx': 1000, 'jsp': 4000}
     parser = argparse.ArgumentParser(
        formatter_class=argparse.RawTextHelpFormatter,
        epilog='''\
