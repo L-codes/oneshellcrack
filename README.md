@@ -1,6 +1,7 @@
 # 0x00 Oneshellcrack
-oneshellcrack 是一个非常快的webshell暴力破解工具，工作原理是多线程并通过一次性发送大量的密码探测POST数据进行爆破，是其他普通webshell密码暴力破解
-工具的数千倍
+oneshellcrack 是一个非常快的webshell暴力破解工具，工作原理是多线程并通过一次性发送大量的密码探测POST数据进行爆破，是其他普通webshell密码暴力破解工具的数千倍
+
+项目地址：[https://github.com/L-codes/oneshellcrack](https://github.com/L-codes/oneshellcrack)
 
 # 0x01 Features
 - 速度极快，经过本地服务器测试平均破解可达每秒22万个密码
@@ -71,28 +72,6 @@ python3 oneshellcrack.py http://172.16.178.139/a.php
 ```
 ## Examples 2
 ```
-python3 oneshellcrack.py http://172.16.178.139:8080/1.jsp
-  ___             ____  _          _ _  ____                _    
- / _ \ _ __   ___/ ___|| |__   ___| | |/ ___|_ __ __ _  ___| | __
-| | | | '_ \ / _ \___ \| '_ \ / _ \ | | |   | '__/ _` |/ __| |/ /
-| |_| | | | |  __/___) | | | |  __/ | | |___| | | (_| | (__|   < 
- \___/|_| |_|\___|____/|_| |_|\___|_|_|\____|_|  \__,_|\___|_|\_\                                                           
-
-               [ Author L       Version 1.0.1 ]
-
-[ Github ] https://github.com/L-codes/oneshellcrack
-
- ( Shell:jsp, Numbers:4000, Threads:200, Retry:1 )
-
-[Crack] No.323  (0.04s) CODE: 200 - POST Content-Length: 28029                    
-[INFO] password in No.323, BinaryTree attack...
-[Crack] No.327  (0.05s) CODE: 200 - POST Content-Length: 28029                    
-
-[Success] Password: test
-[Finish] 1308000 words in 5.811 seconds. (225105 w/s)
-```
-## Examples 3
-```
 $ python3 oneshellcrack.py http://172.16.178.133:84/1.asp -p pwd.lst
   ___             ____  _          _ _  ____                _    
  / _ \ _ __   ___/ ___|| |__   ___| | |/ ___|_ __ __ _  ___| | __
@@ -111,3 +90,6 @@ $ python3 oneshellcrack.py http://172.16.178.133:84/1.asp -p pwd.lst
 [Success] Password: pass&123
 [Finish] 607000 words in 5.080 seconds. (119477 w/s)
 ```
+
+# 0x04 Problem
+如在使用过程中发现bug或有好的建议，欢迎提交[Issues](https://github.com/L-codes/oneshellcrack/issues)和[Pull Requests](https://github.com/L-codes/oneshellcrack/pulls)
